@@ -1,13 +1,9 @@
-#define Serial_0_Baud 9600
+#define Serial_0_Baud 115200
 #define ResetArduino_pin 12 // > ULN 2004 > reset_pin
 uint8_t NR_Bx = 0;
 
 // add to setup()
-void SerialAktywuj() {
-  Serial.begin(Serial_0_Baud);
- // zm.SerialAktywny = Tak;
- //Tim[SerialAktywny] = 255;
-}
+void SerialAktywuj() {  Serial.begin(Serial_0_Baud); }
 
 // add SerialMonitorReset() to loop()
 void SerialMonitorReset() {
